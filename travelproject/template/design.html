@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jgn</title>
+</head>
+<body>
+<h2>REGISTRATION</h2>
+<form action="register" method="post">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="USER NAME"><br>
+    <input type="text" name="first" placeholder="FIRST NAME"><br>
+    <input type="text" name="last" placeholder="LAST NAME"><br>
+    <input type="email" name="email" placeholder="EMAIL ID"><br>
+    <input type="password" name="pass" placeholder="PASSWORD"><br>
+    <input type="password" name="pass2" placeholder="CONFIRM PASSWORD"><br>
+    <input type="submit">
+</form>
+</body>
+</html>
